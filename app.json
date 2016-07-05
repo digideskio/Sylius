@@ -1,0 +1,28 @@
+{
+  "name": "DataShop",
+  "description": "data shop made with symphony2",
+  "scripts": {
+  },
+  "env": {
+    "SYMFONY_ENV": {
+      "required": true
+    },
+    "SYMFONY_SECRET": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "herokuconnect",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
